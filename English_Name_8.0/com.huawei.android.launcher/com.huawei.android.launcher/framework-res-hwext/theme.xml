@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- systemui自动选中背景色 -->
+    <color name="accent_on_dark_emui">#007dff</color>
+    <!-- 搜索框内删除图标颜色 -->
+    <color name="icon_inner_searchview_emui">#ffffff</color>
+    <!-- searchview 文字颜色 -->
+    <color name="searchview_cursor_color_emui">#007dff</color>
+    <color name="emui_searchview_text_hint_color">#4cffffff</color>
+    <color name="emui_searchview_text_color">#ffffff</color>
+    <color name="emui_highlighted_text">#7f007dff</color>
+
+    <!-- Progress bar 动画颜色 -->
+    <color name="emui_progressbar_loading_fill_color">#00ACC1</color>
+
+    <!-- Actionbar和导航栏背景颜色 -->
+    <color name="primary_emui_light">#fcfcfc</color>
+    <color name="navigationbar_emui_light">#fcfcfc</color>
+
+
+    <!--Actionbar图标颜色 -->
+
+    <color name="actionbar_icon">#ffffffff</color> 
+
+    <color name="actionbar_icon_pressed">#FFCCCCCC</color>
+
+
+    <!-- Tab 字体颜色 -->
+    <color name="tab_title_normal_emui">#000000</color>
+    <color name="tab_title_normal_pressed_emui">#88000000</color>
+    <color name="tab_title_normal_emui_dark">#000000</color>
+    <color name="tab_title_normal_pressed_emui_dark">#88000000</color>
+    <color name="tab_title_selected_emui">#007dff</color>
+    <color name="tab_title_selected_pressed_emui">#88007dff</color>
+    <color name="tab_title_selected_emui_dark">#007dff</color>
+    <color name="tab_title_selected_pressed_emui_dark">#88007dff</color>
+
+    <!-- Tab选中条背景 -->
+    <color name="tab_bg_normal_emui">#e2e2e2</color>
+
+    <!-- Sub Tab 字体颜色 -->
+    <color name="sub_tab_title_selected_pressed_emui">#ffffff</color>
+    <color name="sub_tab_entity_emui">#00ACC1</color>
+    <color name="sub_tab_border_emui">#4D00ACC1</color>
+    <color name="sub_tab_title_normal_emui">#000000</color>
+
+    <!-- list字体分割线颜色 -->
+    <color name="divider_horizontal_color_emui">#e3e3e3</color>
+
+    <!-- 设置二级文字 短信收件人输入文字 短信会话输入文字 提醒气泡文字 -->
+    <color name="emui_text_dark">#000000</color>
+    <color name="emui_text_disabled">#88000000</color>
+
+    <!-- 新建联系人提示文字 -->
+    <color name="emui_hint_foreground">#b1b1b1</color>
+
+    <!-- 高亮色颜色 -->
+    <color name="accent_emui">#007dff</color>
+
+    <color name="accent_emui_dark">#ffffff</color>
+    <color name="accent_emui_pressed">#00838F</color>
+    <color name="accent_emui_text_hightlight">#FF0064CC</color>
+
+   
+    <!-- Spinner字体颜色 --> 
+    <color name="emui_spinner_item_default">#000000</color>
+    <color name="emui_spinner_item_pressed">#88000000</color>
+    <color name="emui_spinner_item_disabled">#33000000</color>
+    
+    <!-- Toolbar 按钮颜色 --> 
+    <color name="menuitem_default_checkedcolor">#7e7e7e</color>
+    <color name="menuitem_default_checkedcolor_pressed">#887e7e7e</color>
+    <color name="menuitem_default_checkedcolor_disabled">#337e7e7e</color>
+    <color name="menuitem_default_dark_uncheckedcolor">#7e7e7e</color>
+    <color name="menuitem_default_dark_uncheckedcolor_disabled">#887e7e7e</color>
+    <color name="menuitem_default_dark_uncheckedcolor_pressed">#337e7e7e</color>
+    <color name="menuitem_default_uncheckedcolor">#7e7e7e</color>
+    <color name="menuitem_default_uncheckedcolor_pressed">#887e7e7e</color>
+    <color name="menuitem_default_uncheckedcolor_disabled">#337e7e7e</color>
+    <color name="menuitem_default_dark_checkedcolor">#7e7e7e</color>
+    <color name="menuitem_default_dark_checkedcolor_disabled">#887e7e7e</color>
+    <color name="menuitem_default_dark_checkedcolor_pressed">#337e7e7e</color>
+
+
+    <!-- 设置一级文字 -->
+    <color name="emui_list_separator_default">#3d3d3d</color>
+
+    <!-- Switch\checkbox\radiobtn 颜色 --> 
+    <color name="switch_bg_off_emui">#e2e2e2</color> 
+    <color name="switch_bg_off_disable_emui">#88e2e2e2</color> 
+    <color name="switch_thumb_emui">#ffffff</color>
+    <color name="switch_thumb_disable_emui">#88ffffff</color>
+
+    <!-- checkbox 颜色 -->
+    <color name="accent_on_disable_emui">#887e7e7e</color>
+    <color name="accent_off_disable_emui">#887e7e7e</color> 
+    <color name="accent_off_emui">#7e7e7e</color>
+
+    <!-- 更多弹框上的文字颜色 -->
+    <color name="emui_button_text_color">#000000</color>
+    <color name="emui_button_text_disabled">#88000000</color>
+
+    <!-- 日期数字选择颜色 -->
+    <color name="emui_numberpicker_small_textcolor">#7e7e7e</color>
+
+    <!-- 弹框标题文字 -->
+    <color name="emui_dialog_title_text_Color">#000000</color>
+    <color name="emui_message_text_color">#000000</color>
+    <color name="emui_listitem_text_color">#000000</color>
+
+    <!-- 拨号 短信设置三级文字 -->
+    <color name="emui_secondary_text_dark_disabled">#887e7e7e</color>
+    <color name="emui_secondary_text_dark">#7e7e7e</color>
+
+    <!-- 短信列表右键头 -->
+    <color name="emui_svg_icon_light_default">#80000000</color>
+    <color name="emui_svg_icon_light_disabled">#7f000000</color>
+
+    <!-- 自动通话录音文字颜色 -->
+    <color name="list_text_color_emui">#000000</color>
+</resources>
+

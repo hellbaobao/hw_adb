@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Lockscreen version="1" frameRate="30" displayDesktop="true" screenWidth="1080" id="201804206010">
+    <Var name="notification" expression="1"/>
+
+    <VariableBinders>
+        <ContentProviderBinder
+                uriFormat="content://weather/weather"
+                columns="city_name,temperature,temperature_range,description,weather_type"
+                countName="hasweather">
+            <Variable name="weather_id" type="int" column="weather_type"/>
+            <Variable name="weather_location" type="string" column="city_name"/>
+            <Variable name="weather_temperature_range" type="string" column="temperature_range"/>
+            <Variable name="weather_description" type="string" column="description"/>
+        </ContentProviderBinder>
+    </VariableBinders>
+
+    <!-- 亮灭屏效果 -->
+    <ExternalCommands>
+        <Trigger action="resume">
+            <Command target="unlockcx.visibility" value="false"/>
+            <Command target="unlockxs.visibility" value="true"/>
+            <Command target="dx_1.visibility" value="true"/>
+            <Command target="dx_2.visibility" value="true"/>
+        </Trigger>
+        <Trigger action="pause">
+            <Command target="dx_1.visibility" value="false"/>
+            <Command target="dx_2.visibility" value="false"/>
+        </Trigger>
+    </ExternalCommands>
+
+    <Image src="bj.jpg">
+    </Image>
+
+
+    <!-- 蝴蝶 -->
+    <Image x="297.5" y="479" align="center" alignV="center" src="hudie1_1.png">
+        <SourcesAnimation>
+            <Source src="hudie1_1.png" time="250"/>
+            <Source src="hudie1_2.png" time="500"/>
+            <Source src="hudie1_3.png" time="750"/>
+            <Source src="hudie1_2.png" time="1000"/>
+            <Source src="hudie1_1.png" time="1250"/>
+        </SourcesAnimation>
+    </Image>
+
+    <Image x="120" y="900" align="center" alignV="center" src="touying.png">
+    </Image>
+
+    <Image x="405" y="514" align="center" alignV="center" src="guangxiao1.png">
+        <AlphaAnimation>
+            <Alpha a="0" time="0"/>
+            <Alpha a="255" time="1200"/>
+            <Alpha a="255" time="2550"/>
+            <Alpha a="0" time="3750"/>
+        </AlphaAnimation>
+    </Image>
+
+    <Image x="622.5" y="(#screen_height)-1920+619" align="center" alignV="center" src="hudie2.png">
+    </Image>
+
+    <Image x="647.5" y="(#screen_height)-1920+613" align="center" alignV="center" src="guangxiao2.png">
+        <AlphaAnimation>
+            <Alpha a="55" time="0"/>
+            <Alpha a="255" time="800"/>
+            <Alpha a="255" time="2000"/>
+            <Alpha a="55" time="2800"/>
+        </AlphaAnimation>
+    </Image>
+
+    <Image x="156" y="168.5" align="center" alignV="center" src="hudie3.png">
+    </Image>
+
+    <Image x="160.5" y="174" align="center" alignV="center" src="guangxiao3.png">
+        <AlphaAnimation>
+            <Alpha a="0" time="0"/>
+            <Alpha a="155" time="1000"/>
+            <Alpha a="0" time="2000"/>
+        </AlphaAnimation>
+    </Image>
+
+    <Image x="190" y="(#screen_height)-1920+1368.5" align="center" alignV="center" src="hudie4.png">
+    </Image>
+
+    <Image x="185" y="(#screen_height)-1920+1384.5" align="center" alignV="center" src="guangxiao4.png">
+        <AlphaAnimation>
+            <Alpha a="0" time="0"/>
+            <Alpha a="200" time="1000"/>
+            <Alpha a="0" time="2000"/>
+        </AlphaAnimation>
+    </Image>
+
+    <Image x="1044" y="(#screen_height)-1920+1535.5" align="center" alignV="center" src="hudie5.png">
+    </Image>
+
+    <Image x="992.5" y="(#screen_height)-1920+1620" align="center" alignV="center" src="hudie6.png">
+    </Image>
+
+    <Image x="674.5" y="(#screen_height)-1920+941" align="center" alignV="center" src="xiaohehua.png">
+    </Image>
+
+    <!-- 荷花 -->
+    <Group name="dx_1">
+        <Image x="846" y="(#screen_height)-1920+730" align="center" alignV="center" src="huaban9.png">
+        </Image>
+
+        <Image x="845.5" y="(#screen_height)-1920+752" align="center" alignV="center" centerX="201.5" centerY="225"
+               src="huaban8.png">
+            <RotationAnimation>
+                <Rotation angle="13" time="0"/>
+                <Rotation angle="13" time="1000"/>
+                <Rotation angle="0" time="2500"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="898" y="(#screen_height)-1920+709.5" align="center" alignV="center" centerX="17" centerY="213.5"
+               src="huaban1.png">
+            <RotationAnimation>
+                <Rotation angle="-10" time="0"/>
+                <Rotation angle="-10" time="2000"/>
+                <Rotation angle="0" time="2500"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="845.5" y="(#screen_height)-1920+752" align="center" alignV="center" src="huaxin1.png">
+        </Image>
+
+        <Image x="845.5" y="(#screen_height)-1920+752" align="center" alignV="center" centerX="200.5" centerY="227.5"
+               src="huaban2.png">
+            <RotationAnimation>
+                <Rotation angle="-30" time="0"/>
+                <Rotation angle="-30" time="1000"/>
+                <Rotation angle="0" time="2500"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="848" y="(#screen_height)-1920+752" align="center" alignV="center" centerX="197" centerY="221.5"
+               src="huaban3.png">
+            <RotationAnimation>
+                <Rotation angle="-40" time="0"/>
+                <Rotation angle="-40" time="500"/>
+                <Rotation angle="0" time="2500"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="845.5" y="(#screen_height)-1920+752" align="center" alignV="center" centerX="212" centerY="216"
+               src="huaban4.png">
+            <RotationAnimation>
+                <Rotation angle="-55" time="0"/>
+                <Rotation angle="0" time="2500"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="817" y="(#screen_height)-1920+835" align="center" alignV="center" centerX="70" centerY="30"
+               src="huaban5.png">
+            <RotationAnimation>
+                <Rotation angle="130" time="0"/>
+                <Rotation angle="0" time="2500"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="845.5" y="(#screen_height)-1920+752" align="center" alignV="center" centerX="190.5" centerY="232"
+               src="huaban6.png">
+            <RotationAnimation>
+                <Rotation angle="40" time="0"/>
+                <Rotation angle="40" time="0"/>
+                <Rotation angle="0" time="2500"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="845.5" y="(#screen_height)-1920+752" align="center" alignV="center" centerX="196.5" centerY="226"
+               src="huaban7.png">
+            <RotationAnimation>
+                <Rotation angle="23" time="0"/>
+                <Rotation angle="23" time="1000"/>
+                <Rotation angle="0" time="2500"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="557.5" y="(#screen_height)-1920+911" align="center" alignV="center" src="luzhu1.png">
+            <PositionAnimation>
+                <Position x="0" y="0" time="0"/>
+                <Position x="0-46" y="0+48" time="3000"/>
+                <Position x="-46" y="48+200" time="5000"/>
+                <Position x="-46" y="48+200" time="1000000000000"/>
+            </PositionAnimation>
+            <AlphaAnimation>
+                <Alpha a="255" time="0"/>
+                <Alpha a="255" time="3000"/>
+                <Alpha a="0" time="5000"/>
+                <Alpha a="0" time="1000000000000"/>
+            </AlphaAnimation>
+        </Image>
+    </Group>
+
+    <Image x="835.5" y="(#screen_height)-1920+797" align="center" alignV="center" src="guangshu1.png">
+        <AlphaAnimation>
+            <Alpha a="55" time="0"/>
+            <Alpha a="255" time="3000"/>
+            <Alpha a="255" time="4000"/>
+            <Alpha a="55" time="6000"/>
+        </AlphaAnimation>
+    </Image>
+
+    <Image x="537" y="(#screen_height)-1920+1787" align="center" alignV="center" src="dhehua.png">
+    </Image>
+
+    <Group name="dx_2">
+        <Image x="687.5" y="(#screen_height)-1920+1426.5" align="center" alignV="center" centerX="419.5" centerY="433.5"
+               src="dhuaban1.png">
+            <RotationAnimation>
+                <Rotation angle="-30" time="0"/>
+                <Rotation angle="-30" time="1000"/>
+                <Rotation angle="0" time="3000"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="687.5" y="(#screen_height)-1920+1426.5" align="center" alignV="center" centerX="425" centerY="425.5"
+               src="dhuaban2.png">
+            <RotationAnimation>
+                <Rotation angle="-50" time="0"/>
+                <Rotation angle="-50" time="500"/>
+                <Rotation angle="0" time="3000"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="687.5" y="(#screen_height)-1920+1426.5" align="center" alignV="center" centerX="405" centerY="445"
+               src="dhuaban3.png">
+            <RotationAnimation>
+                <Rotation angle="-65" time="0"/>
+                <Rotation angle="0" time="3000"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="689" y="(#screen_height)-1920+1426.5" align="center" alignV="center" centerX="400" centerY="380"
+               src="dhuaban4.png">
+            <RotationAnimation>
+                <Rotation angle="130" time="0"/>
+                <Rotation angle="0" time="3000"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="676" y="(#screen_height)-1920+1426.5" align="center" alignV="center" centerX="428" centerY="446.5"
+               src="dhuaban5.png">
+            <RotationAnimation>
+                <Rotation angle="90" time="0"/>
+                <Rotation angle="90" time="0"/>
+                <Rotation angle="0" time="3000"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="687.5" y="(#screen_height)-1920+1426.5" align="center" alignV="center" centerX="390" centerY="430"
+               src="dhuaban6.png">
+            <RotationAnimation>
+                <Rotation angle="43" time="0"/>
+                <Rotation angle="43" time="1000"/>
+                <Rotation angle="0" time="3000"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="687.5" y="(#screen_height)-1920+1423.5" align="center" alignV="center" centerX="393.5" centerY="437.5"
+               src="dhuaban7.png">
+            <RotationAnimation>
+                <Rotation angle="23" time="0"/>
+                <Rotation angle="23" time="1000"/>
+                <Rotation angle="0" time="3000"/>
+                <Rotation angle="0" time="100000000000"/>
+            </RotationAnimation>
+        </Image>
+
+        <Image x="687.5" y="(#screen_height)-1920+1426.5" align="center" alignV="center" src="huaxin2.png">
+        </Image>
+
+        <Image x="690" y="(#screen_height)-1920+1445" align="center" alignV="center" src="guangshu2.png">
+            <AlphaAnimation>
+                <Alpha a="155" time="0"/>
+                <Alpha a="255" time="2000"/>
+                <Alpha a="255" time="4000"/>
+                <Alpha a="155" time="6000"/>
+            </AlphaAnimation>
+        </Image>
+
+        <Image x="598.5" y="(#screen_height)-1920+1721.5" align="center" alignV="center" src="luzhu2.png">
+            <PositionAnimation>
+                <Position x="0" y="0" time="3000"/>
+                <Position x="0-15" y="0+45" time="5000"/>
+                <Position x="-15" y="45+200" time="7000"/>
+                <Position x="-15" y="45+200" time="1000000000000"/>
+            </PositionAnimation>
+            <AlphaAnimation>
+                <Alpha a="0" time="0"/>
+                <Alpha a="0" time="2950"/>
+                <Alpha a="255" time="3000"/>
+                <Alpha a="255" time="5000"/>
+                <Alpha a="0" time="7000"/>
+                <Alpha a="0" time="1000000000000"/>
+            </AlphaAnimation>
+        </Image>
+    </Group>
+
+
+    <!-- 开锁后出现涟漪 -->
+    <Group name="unlockcx">
+        <Image x="682.5" y="(#screen_height)-1920+920" align="center" alignV="center" src="lianyi1.png">
+            <PositionAnimation>
+                <Position x="0" y="0" time="0"/>
+                <Position x="0" y="0+50" time="1500"/>
+            </PositionAnimation>
+            <AlphaAnimation>
+                <Alpha a="255" time="0"/>
+                <Alpha a="0" time="1500"/>
+            </AlphaAnimation>
+            <SizeAnimation>
+                <Size w="495" h="200" time="0"/>
+                <Size w="795" h="338" time="1500"/>
+            </SizeAnimation>
+        </Image>
+
+        <Image x="480" y="(#screen_height)-1920+1780.5" align="center" alignV="center" src="lianyi2.png">
+            <PositionAnimation>
+                <Position x="0" y="0" time="0"/>
+                <Position x="0" y="0+50" time="1500"/>
+            </PositionAnimation>
+            <AlphaAnimation>
+                <Alpha a="255" time="0"/>
+                <Alpha a="0" time="1500"/>
+            </AlphaAnimation>
+            <SizeAnimation>
+                <Size w="700" h="300" time="0"/>
+                <Size w="1118" h="535" time="1500"/>
+            </SizeAnimation>
+        </Image>
+
+        <Image x="853.5" y="(#screen_height)-1920+688" align="center" alignV="center" src="xingguang1.png">
+            <PositionAnimation>
+                <Position x="0" y="0" time="0"/>
+                <Position x="0" y="0-300" time="5000"/>
+            </PositionAnimation>
+            <AlphaAnimation>
+                <Alpha a="0" time="0"/>
+                <Alpha a="255" time="2500"/>
+                <Alpha a="0" time="5000"/>
+            </AlphaAnimation>
+        </Image>
+
+        <Image x="513.5" y="(#screen_height)-1920+700" align="center" alignV="center" src="xingguang2.png">
+            <PositionAnimation>
+                <Position x="0" y="0" time="0"/>
+                <Position x="0" y="0-500" time="6000"/>
+            </PositionAnimation>
+            <AlphaAnimation>
+                <Alpha a="0" time="0"/>
+                <Alpha a="255" time="3000"/>
+                <Alpha a="0" time="6000"/>
+            </AlphaAnimation>
+        </Image>
+    </Group>
+
+    <Image name="unlockxs" x="539.5" y="(#screen_height)-1920+1840+#unlocker.move_y" align="center" alignV="center"
+           src="jiesuo.png">
+        <PositionAnimation>
+            <Position x="0" y="0" time="0"/>
+            <Position x="0" y="0-50" time="2000"/>
+            <Position x="0" y="0-50" time="2500"/>
+        </PositionAnimation>
+        <AlphaAnimation>
+            <Alpha a="55" time="0"/>
+            <Alpha a="255" time="1000"/>
+            <Alpha a="0" time="2000"/>
+            <Alpha a="0" time="2500"/>
+        </AlphaAnimation>
+    </Image>
+
+    <Slider name="unlocker" bounceInitSpeed="2000" bounceAcceleration="3000">
+        <StartPoint x="350" y="(#screen_height)-1920+1690" w="350" h="250">
+        </StartPoint>
+        <EndPoint x="350" y="(#screen_height)-1920+1690-390" w="350" h="250">
+            <Path x="350" y="(#screen_height)-1920+1690" w="350" h="250">
+                <Position x="0" y="0"/>
+                <Position x="0" y="0-150"/>
+            </Path>
+            <Trigger>
+                <ExternCommand command="unlock" delay="2000"/>
+                <Command target="unlockcx.visibility" value="true"/>
+                <Command target="unlockxs.visibility" value="false"/>
+            </Trigger>
+        </EndPoint>
+    </Slider>
+    <!-- 电量不足提醒 -->
+    <Text x="#screen_width/2" y="(#screen_height)" category="BatteryLow" alignV="bottom" color="#ffffff" size="48"
+          text="电量不足！" alpha="180" align="center"/>
+
+    <!-- 充电中提醒 -->
+    <Text x="#screen_width/2" y="(#screen_height)" category="Charging" alignV="bottom" color="#ffffff" align="center"
+          size="42" format="充电中 %d%%" alpha="180" paras="#battery_level"/>
+
+    <!-- 电量充满提醒 -->
+    <Text x="#screen_width/2" y="(#screen_height)" category="BatteryFull" alignV="bottom" color="#ffffff" size="42"
+          text="充电完成!" alpha="180" align="center"/>
+
+</Lockscreen>
