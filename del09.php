@@ -38,8 +38,11 @@ echo echoMsgz("【6】：点击右下角 [我的] 图标");
 system('adb shell input tap 980 2150');
 echo echoMsgz("【7】：点击 [我的主题] 选项");
 system('adb shell input tap 320 710');
-system('adb shell input tap 200 1200');
+echo echoMsgz("【7】：点击 [第2个主题] ");
+system('adb shell input tap 550 600');
+echo echoMsgz("【7】：点击 [删除 图标] ");
 system('adb shell input tap 960 2188');
+echo echoMsgz("【7】：点击 [删除 按钮] ");
 system('adb shell input tap 840 2090');
 //结束
 echoz();
